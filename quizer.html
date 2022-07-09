@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootCamp Code Quizer</title>
+    <link rel="stylesheet" href="./assets/css/quizer.css">
+</head>
+
+<body>
+   <div class="container">
+    <div class="scores"><a href="./quizerhighscore.html">Check out Highscores</a></div>
+    <div class="timer">Time: <span id="time">0</span></div>
+    <div class="wrapper">
+        <div class="start-quizer" class="start">
+        <h1>BootCamp-Code-Quizer</h1>
+        <p> Practice BootCamp skills by answering coding questions on a timed basis
+            Incorrect answers will reduce your score 
+            Incorect answers will also reduce your available time by ten seconds
+        </p>
+       
+        <button id="start">Start Quiz</button>
+       
+    </div>
+    </div>
+
+    <div class="hide" id="questions">
+        <h2 class="questions"></h2>
+        <div class="choices" id="choices"></div>
+    </div>
+    <div class="hide" id="end-quizer">
+        <!-- <textarea name="initials" id="initials" max="5"></textarea> -->
+        <!-- <textarea name="initials" id="initials" cols="50" rows="10"></textarea> -->
+        <p>Enter Your Initials: 
+        <input type="text" id="initials" max="5"/>
+        <button id="submit">Submit</button></p>
+        <p>Final score. <span id="final-sore"></span></p>
+        <h2>Done!</h2>
+         <!-- <p>Enter Your Initials Here: <input type="text" id="initials" max="5"/>
+        <button id="submit">Submit</button></p> -->
+    </div>
+   </div>
+      <script src="./assets/js/quizer.js"></script>
+      <script src="./assets/js/questions.js"></script>
+</body>
+</html>
