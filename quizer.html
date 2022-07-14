@@ -2,46 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BootCamp Code Quizer</title>
     <link rel="stylesheet" href="./assets/css/quizer.css">
 </head>
 
 <body>
-   <div class="container">
-    <div class="scores"><a href="./quizerhighscore.html">Check out Highscores</a></div>
-    <div class="timer">Time: <span id="time">0</span></div>
-    <div class="wrapper">
-        <div class="start-quizer" class="start">
-        <h1>BootCamp-Code-Quizer</h1>
-        <p> Practice BootCamp skills by answering coding questions on a timed basis
-            Incorrect answers will reduce your score 
-            Incorect answers will also reduce your available time by ten seconds
-        </p>
-       
-        <button id="start">Start Quiz</button>
-       
-    </div>
+  <div class="scores"><a href="quizerhighscore.html">View Highscores</a></div>
+
+  <div class="timer">Time: <span id="time">0</span></div>
+  <div class="container">
+  <div class="wrapper">
+    <div id="start-screen" class="start">
+      <h1>Coding Quiz Challenge</h1>
+      <p>
+        Try to answer the following code-related questions within the time
+        limit. Keep in mind that incorrect answers will penalize your
+        score/time by ten seconds!
+      </p>
+      <button id="start">Start Quiz</button>
     </div>
 
-    <div class="hide" id="questions">
-        <h2 class="questions"></h2>
-        <div class="choices" id="choices"></div>
+    <div id="questions" class="hide">
+      <h2 id="question-title"></h2>
+      <div id="choices" class="choices"></div>
     </div>
-    <div class="hide" id="end-quizer">
-        <!-- <textarea name="initials" id="initials" max="5"></textarea> -->
-        <!-- <textarea name="initials" id="initials" cols="50" rows="10"></textarea> -->
-        <p>Enter Your Initials: 
-        <input type="text" id="initials" max="5"/>
-        <button id="submit">Submit</button></p>
-        <p>Final score. <span id="final-sore"></span></p>
-        <h2>Done!</h2>
-         <!-- <p>Enter Your Initials Here: <input type="text" id="initials" max="5"/>
-        <button id="submit">Submit</button></p> -->
+
+    <div id="end-screen" class="hide">
+      <h2>All done!</h2>
+      <p>Your final score is <span id="final-score"></span>.</p>
+      <p>
+        Enter initials: <input type="text" id="initials" max="3" />
+        <button id="submit">Submit</button>
+      </p>
     </div>
-   </div>
-      <script src="./assets/js/quizer.js"></script>
+
+    <div id="feedback" class="feedback hide"></div>
+  </div>
+      
       <script src="./assets/js/questions.js"></script>
+      <script src="./assets/js/quizer.js"></script>
 </body>
 </html>
