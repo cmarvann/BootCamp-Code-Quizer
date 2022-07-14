@@ -18,6 +18,7 @@ a {
   color: #315643;
   text-decoration: none;
   transition: color 0.1s;
+  font-weight: bold;
 }
 
 a:hover {
