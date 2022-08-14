@@ -28,9 +28,11 @@
 * Easy to use and navigate
 * User interface is clean and polished 
 * Resembles mock-up
+
+# Submission
 * Provide deployed live URL - Github URL
 * GitHub repository that contains application code
-* Demonstrate functionality 
+
 
 
 
